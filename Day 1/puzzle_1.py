@@ -1,7 +1,7 @@
 import numpy as np
 
 input_data = ""
-with open("input1") as f:
+with open("input") as f:
     input_data = f.read()
 
 elves_items = input_data.split('\n\n')
