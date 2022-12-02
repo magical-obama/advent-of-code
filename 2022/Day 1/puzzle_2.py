@@ -1,6 +1,5 @@
-import numpy as np
+from time import process_time_ns
 
-input_data = ""
 with open("input") as f:
     input_data = f.read()
 
@@ -38,3 +37,5 @@ print('Elf 3: ',  max(elf_sum))
 total_sum += max(elf_sum)
 
 print(total_sum)
+
+print('Process took', process_time_ns(), 'nanoseconds')

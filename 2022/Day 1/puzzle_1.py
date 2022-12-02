@@ -1,6 +1,5 @@
-import numpy as np
+from time import process_time_ns
 
-input_data = ""
 with open("input") as f:
     input_data = f.read()
 
@@ -22,3 +21,5 @@ elf_sum = list(map(lambda x: sum(x), elves))
 del elves, elves_items, elf_backpack, input_data, item, f, i
 
 print(max(elf_sum))
+
+print('Process took', process_time_ns(), 'nanoseconds')
