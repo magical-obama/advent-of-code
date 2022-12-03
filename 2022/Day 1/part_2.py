@@ -36,6 +36,4 @@ elf_sum.pop(elf_sum.index(max(elf_sum)))
 print('Elf 3: ',  max(elf_sum))
 total_sum += max(elf_sum)
 
-print(total_sum)
-
-print('Process took', process_time_ns(), 'nanoseconds')
+print('Solution:', total_sum)

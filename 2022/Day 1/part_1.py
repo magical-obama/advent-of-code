@@ -20,6 +20,4 @@ elf_sum = list(map(lambda x: sum(x), elves))
 
 del elves, elves_items, elf_backpack, input_data, item, f, i
 
-print(max(elf_sum))
-
-print('Process took', process_time_ns(), 'nanoseconds')
+print('Solution:', max(elf_sum))

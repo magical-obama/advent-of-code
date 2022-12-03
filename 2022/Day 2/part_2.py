@@ -81,6 +81,4 @@ for index in range(len(games)):
     scores.append(gameScore)
 
 print(scores)
-print('Total Score: ' + str(sum(scores)))
-
-print('Process took', process_time_ns(), 'nanoseconds')
+print('Solution:', sum(scores))
