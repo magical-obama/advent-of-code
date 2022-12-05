@@ -35,8 +35,10 @@ for operation in operations:
     num = operation[0]
     from_stack_index = operation[1] - 1
     to_stack_index = operation[2] - 1
-    for current_crate in range(num):
-        stacks[to_stack_index].append(stacks[from_stack_index].pop())
+    to_move = stacks[from_stack_index][-num:]
+    stacks[from_stack_index] = stacks[from_stack_index][:-num]
+    stacks[to_stack_index].extend(to_move)
+
 
 print(operations)
 print(stacks)
