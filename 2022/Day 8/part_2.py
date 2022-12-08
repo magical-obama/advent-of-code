@@ -80,7 +80,7 @@ data_array: list[list[int]] = []
 for j in range(len(input_array)):
     data_array.append([int(num) for num in input_array[j]])
 
-print(data_array)
+# print(data_array)
 
 # score, x_coord, y_coord
 highest_score = [0, 0, 0]
